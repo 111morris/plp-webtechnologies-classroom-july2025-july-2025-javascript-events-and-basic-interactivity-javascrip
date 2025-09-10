@@ -1,0 +1,67 @@
+<!DCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Interactive Web Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Welcome to Morris' Interactive Web Page!</h1>
+
+<!-- Light/Dark Mode Toggle -->
+<section>
+<h2>Toggle Theme</h2>
+<button id="theme-toggle">Switch to Dark Mode</button>
+</section>
+
+<!-- Counter -->
+<section>
+<h2>Click Counter</h2>
+<p>Button clicked <span id="counter">0</span> times.</p>
+<button id="count-button">Click Me!</button>
+</section>
+
+<!-- FAQ -->
+<section>
+<h2> FAQ</h2>
+<div class="faq-item">
+<button class="faq-question">What is JavaScript?</button>
+<div class="faq-answer">JavaScript is a programming language used to make web pages interactive.</div>
+</div>
+<div class="faq-item">
+<button class="faq-question">What is the DOM?</button>
+<div class="faq-answer">The DOM is the Document Object Model. It represents the structure of a web page.</div>
+</div>
+</section>
+
+<!-- Form -->
+<section>
+<h2> Sign Up Form</h2>
+<form id="signup-form">
+<label>
+Name:
+<input type="text" id="name" required>
+<span class="error" id="name-error"></span>
+</label><br><br>
+
+<label>
+Email:
+<input type="text" id="email" required>
+<span class="error" id="email-error"></span>
+</label><br><br>
+
+<label>
+Password:
+<input type="password" id="password" required>
+<span class="error" id="password-error"></span>
+</label><br><br>
+
+<button type="submit">Submit</button>
+<p id="form-success" class="success"></p>
+</form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+
+
